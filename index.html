@@ -166,64 +166,75 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container" >
-    	<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-			<h1>Work Experience</h1>
-		<ul>
-		<li style="--accent-color:#E24A68">
-				<div class="date">Dec 2024- Present</div>
-				<div class="title">Instahub</div>
-				<div class="title">Software Engineer Intern</div>
-				<div class="descr">Developing a serverless data pipeline using AWS Services like Lambda, API Gateway, Kinesis Data Firehose and CloudWatch to gather datalogger data and store it in RDS, by deploying infrastructure as a code automated via CloudFormation.</div>								
-		</li>
-		<li style="--accent-color:#E24A68">
-				<div class="date">July 2024 - Sep 2024</div>
-				<div class="title">Instahub</div>
-				<div class="title">Software Engineer Intern</div>
-				<div class="descr">Architected AWS Cognito-based authentication, enhancing security and user management for over 50,000 active users, leveraged React.js, Python, and AWS Lambda to develop innovative session extension mechanisms by generating new tokens, effectively resolving session timeout issues and enhancing user experience.</div>
-				<div class ="descr">Spearheaded the resolution of critical AWS Amplify deployment issues for the InstaHub Dashboard project, leading to a 30% improvement in build efficiency. Leveraged AWS Cognito, CloudFormation stack, Cloudwatch logs, AWS SNS and custom scripts to optimize authentication workflows, ensuring a seamless deployment pipeline and enhancing system reliability by 40%.</div>
-				<div class ="descr">Strategically deployed and configured 15 AWS Lambda functions using Node.js and Python, seamlessly integrating their aliases with API Gateway for enhanced version control. Through meticulous optimization, achieved a 30% reduction in system latency, significantly boosting application responsiveness and performance.
-				</div>
-				<div class ="descr">Resolved a CORS issue on the overview page by configuring the correct triggers and permissions for AWS Lambda functions and API Gateway, ensuring seamless cross-origin requests and improving accessibility across the application.
-				</div>
-		</li>
-    	<li style="--accent-color:#E24A68">
-			<div class="date">Feb 2024 - Jun 2024</div>
-			<div class="title">Graduate Research Assistant, Santa Clara University, California</div>
-			<div class="descr">Integrated Accelerometer sensor using ShakeDetector technology, reducing the acknowledgment time of incoming requests by 50% compared to traditional VOIP solutions, enhancing real-time responsiveness in disaster scenarios.</div>
-			<div class="descr">Implemented a user authentication system integrated with Firebase schema, enabling seamless user registration and login, resulting in a 35% increase in user sign-up rate and a 80% reduction in authentication errors
+    <section id="resume-section" class="timeline-section">
+		<h1 class="text-center">Work Experience</h1>
+		<ul class="timeline">
+		  <li>
+			<div class="timeline-date">Dec 2024 – Present</div>
+			<div class="timeline-card">
+			  <h3 class="company">Instahub</h3>
+			  <h4 class="role">Software Engineer Intern</h4>
+			  <p class="description">
+				Developing a serverless data pipeline using AWS Services like Lambda, API Gateway, Kinesis Data Firehose and CloudWatch to gather datalogger data and store it in RDS, by deploying infrastructure as a code automated via CloudFormation.
+			  </p>
 			</div>
-		</li>
-    	
-    	<li style="--accent-color:#E24A68">
-			<div class="date">Nov 2022 - Jul 2023</div>
-			<div class="title">Accenture</div>
-			<div class="title">Associate Software Engineer</div>
-			<div class="descr">Analyzed and innovated solutions as a .NET Developer for an off-shore client company, Allstate Insurance, to  accomplish high-quality scalable and extendable .NET solutions in C#, ASP.NET Core Web API and Blazor with adoption of SCRUM methodology.</div>
-			<div class="descr">Optimized and deployed two ASP.NET applications for Allstate Insurance—Claims and Support—boosting claim filing and tracking efficiency by 17%.</div>
-			<div class="descr">Implemented advanced ASP.NET caching mechanisms, improving web application performance and scalability by 40%.Enhanced application configuration and testing, leading to a 4% increase in business productivity over a period of 9 months, with a 15% decrease in server load and response times.
+		  </li>
+		  <li>
+			<div class="timeline-date">July 2024 – Sep 2024</div>
+			<div class="timeline-card">
+			  <h3 class="company">Instahub</h3>
+			  <h4 class="role">Software Engineer Intern</h4>
+			  <p class="description">
+				Designed and deployed scalable backend and cloud solutions  for Instahub’s IOT dashboard which shows a data driven analysis from parameters which are fetched from data loggers
+			  </p>
+			  <p class="description">
+				I worked on building deployment pipelines, optimizing authentication workflows and microservices for performance and for this I used various AWS services like Lambda, API Gateways, Cloudformation, Cloudwatch, RDS and many more along with Python and React.  
+			  </p>
 			</div>
-			<div class="descr">Developed and integrated Web APIs to facilitate seamless communication between web applications and databases, ensuring timely data delivery and efficient data flow. This resulted in a 35% improvement in data retrieval speed and a 50% reduction in data latency, significantly enhancing user interface responsiveness and backend system reliability.
+		  </li>
+		  <li>
+			<div class="timeline-date">Feb 2024 – Jun 2024</div>
+			<div class="timeline-card">
+			  <h3 class="company">Santa Clara University</h3>
+			  <h4 class="role">Graduate Research Assistant</h4>
+			  <p class="description">
+				Developing a real-time disaster management system for firefighters so that they can switch from traditional communication to a more digitalized form of communication reducing response time.
+			  </p>
+			  <p class="description">
+				Some of my contributions include developing a user authentication system, integrating accelerometer-based alerts and acknowledgements.
+			  </p>
 			</div>
-		</li>
-    	
-    	<li style="--accent-color:#E24A68">
-			<div class="date">Oct 2020 - Jan 2021</div>
-			<div class="title">Wowrooms Hospitality</div>
-			<div class="title">Software Engineer Intern</div>
-			<div class="descr">Led a cross-functional team and developed a dynamic and robust application for Hourly Rooms, as the frontend team lead, with adoption of Agile methodologies, improving project delivery efficiency by 25%.
+		  </li>
+		  <li>
+			<div class="timeline-date">Nov 2022 – Jul 2023</div>
+			<div class="timeline-card">
+			  <h3 class="company">Accenture</h3>
+			  <h4 class="role">Associate Software Engineer</h4>
+			  <p class="description">
+				Engineered and optimized .NET applications for enterprise clients, Allstate Insurance.
+			  </p>
+			  <p class="description">
+				I worked on features like claims tracking, specific UI components, and system performance using .NET, ASP.NET and Blazor to render the UI components using C#.
+			  </p>
 			</div>
-			<div class="descr">Engineered and deployed APIs initially using Django REST framework before transitioning to Laravel PHP for its advanced routing mechanisms and middleware capabilities, resulting in a 35% increase in API response efficiency.</div>
-			<div class="descr">Integrated  Google Maps API for geolocation services, enabling hotel tracking on maps, which increased database query efficiency and reduced page load times by 40%.
+		  </li>
+		  <li>
+			<div class="timeline-date">Oct 2020 – Jan 2021</div>
+			<div class="timeline-card">
+			  <h3 class="company">Wowrooms Hospitality</h3>
+			  <h4 class="role">Software Engineer Intern</h4>
+			  <p class="description">
+				Developed frontend and backend services using Laravel PHP, Bootstrap, JavaScript.
+			  </p>
+			  <p class="description">
+				I worked on developing and enhancing features for hotel tracking, backend APIs with structured routing and middleware to optimize request handling.
+
+			  </p>
 			</div>
-			<div class="descr">Implemented JavaScript and Bootstrap for the UI and utilized Laravel PHP for backend functionalities, enhancing frontend-backend integration by 30%.
-			</div>
-		</li>
+		  </li>
+		  <!-- Repeat for each experience -->
 		</ul>
+	  </section>
         
         
     		<div class="row justify-content-center mt-5">
@@ -231,40 +242,34 @@
     				<p><a href="./JoshuaGodinhoResume.pdf" class="btn btn-primary py-4 px-5" download="JoshuaGodinhoResume.pdf" target="_blank">Download CV</a></p>
     			</div>
     		</div>
-		</div>
-    	</div>
-		</div>
-    </section>
 
 
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    	<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-			<h1>Education</h1>
-		<ul>
-    	
-    	<li style="--accent-color:#FBCA3E">
-			<div class="date">Sep 2023 - Expected Jun 2025</div>
-			<div class="title">Masters in Computer Science at Santa Clara University</div>
-			<div class="descr">	Relevant Coursework:  Algorithms, Object Oriented Design and Analysis, Machine Learning</div>
-			<div class="descr">	GPA : 3.8</div>
-
-   		 </li>
-    	
-    	<li style="--accent-color:#FBCA3E">
-			<div class="date">July 2018 - June 2022</div>
-			<div class="title">Bachelors in Engineering in Computer Science</div>
-			<div class="descr">	Course Electives:  Cloud Computing, Data Structures, Operating Systems, DevOps, Advanced Algorithms</div>
-			<div class="descr">	GPA : 3.85</div>    	
-		</li>
-    	
-		</ul>
-        
-		</div>
-    	</div>
-		</div>
-    </section>
+			<section id="resume-section" class="timeline-section">
+				<h1 class="text-center">Education</h1>
+				<ul class="timeline">
+				  <li>
+					<div class="timeline-date">Sep 2023 – Exp Jun 2025</div>
+					<div class="timeline-card">
+					  <h3 class="company">Santa Clara University</h3>
+					  <h4 class="role">Masters in Computer Science</h4>
+					  <p class="description">
+						Relevant Coursework: Solutions Architecture and the Cloud, Design Patterns, Object Oriented Design and Analysis, Advanced Operated Systems
+					  </p>
+					</div>
+				  </li>
+				  <li>
+					<div class="timeline-date">July 2018 – Jun 2022</div>
+					<div class="timeline-card">
+					  <h3 class="company">University of Mumbai</h3>
+					  <h4 class="role">Bachelors in Computer Engineering</h4>
+					  <p class="description">
+						Relevant Coursework: Data Structures, Advanced Algorithms, Distributed Systems, Machine Learning
+					  </p>
+					</div>
+				  </li>	
+				  <!-- Repeat for each experience -->
+				</ul>
+			  </section>
 	
 		<section class="ftco-section" id="skills-section">
 			<div class="container">
