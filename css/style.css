@@ -8651,6 +8651,7 @@ h1, h2, h3, h4, h5,
       display: none; } }
 
 .owl-carousel {
+  touch-action: auto !important;
   position: relative; }
   .owl-carousel .owl-item {
     opacity: .4; }
