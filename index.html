@@ -34,11 +34,8 @@
 	<meta name="twitter:image" content="https://joshuagodinho.github.io/images/about.jpg">
 
   </head>
-  <body overscroll-behavior: auto;
-  -webkit-overflow-scrolling: touch;
-   data-spy="scroll" 
-   \data-target=".site-navbar-target" 
-   data-offset="300">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
@@ -65,7 +62,7 @@
 	      <div class="slider-item ">
 	      	<div class="overlay"></div>
 	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/about.jpg);">
 	          		<div class="overlay"></div>
 	          	</div>
@@ -812,7 +809,25 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+  <script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+	  const toggler = document.querySelector(".navbar-toggler");
+	  const navbarCollapse = document.querySelector(".navbar-collapse");
+  
+	  navLinks.forEach(link => {
+		link.addEventListener("click", () => {
+		  if (window.getComputedStyle(toggler).display !== "none" &&
+			  navbarCollapse.classList.contains("show")) {
+			// Simulate click and restore collapsed state class
+			toggler.classList.add("collapsed");
+			toggler.setAttribute("aria-expanded", "false");
+			navbarCollapse.classList.remove("show");
+		  }
+		});
+	  });
+	});
+  </script>
   </body>
 </html>
 
