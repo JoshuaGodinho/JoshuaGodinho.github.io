@@ -76,6 +76,19 @@ body, html {
   margin-top: 10px;
 }
 
+/* Hero & About images: ensure centered and proper display */
+.owl-carousel.home-slider .slider-item .slider-text .one-third.img,
+.owl-carousel.home-slider .slider-item .slider-text .one-third .img {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.ftco-about .img-about .img {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
 
  .contact-icon {
   width: 40px; /* Adjust as needed */
